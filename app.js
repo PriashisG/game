@@ -69,7 +69,7 @@ function lose(userChoice, compChoice) {
 function draw(userChoice) {
   user_score_span.innerHTML = user_score;
   comp_score_span.innerHTML = comp_score;
-  result_p.innerHTML = "It's a draw!";
+  result_p.innerHTML = "It's a draw!😬";
 }
 
 // returning the choice word for each make
