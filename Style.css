@@ -110,6 +110,7 @@ header {
 }
 
 footer {
+  margin-top: 100px;
   padding: 5px;
   font-size: 7px;
   background-color: whitesmoke;
