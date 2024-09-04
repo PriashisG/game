@@ -108,3 +108,12 @@ header {
   background: #E2584D;
   border-color: whitesmoke;
 }
+
+footer {
+  padding: 5px;
+  font-size: 7px;
+  background-color: whitesmoke;
+  font-family: asap, sans-serif;
+  color: #152238;
+  text-align: center;
+}
