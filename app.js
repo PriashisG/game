@@ -5,7 +5,7 @@ let comp_score = 0;
 // taking the elements as const
 const user_score_span = document.getElementById("user-score"); 
 const comp_score_span = document.getElementById("comp-score"); 
-const score_board_div = document.querySelector(".score-board"); 
+const score_board_div = document.querySelector(".score-board");
 const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
@@ -48,6 +48,7 @@ function win(userChoice, compChoice) {
   user_score++;
   user_score_span.innerHTML = user_score;
   comp_score_span.innerHTML = comp_score;
+  result_p.style.color = '#00C04B';
 
   const smallUserWord = '<sub>user</sub>';
   const smallCompWord = '<sub>comp</sub>';
@@ -59,7 +60,8 @@ function lose(userChoice, compChoice) {
   comp_score++;
   user_score_span.innerHTML = user_score;
   comp_score_span.innerHTML = comp_score;
-
+  result_p.style.color = '#E2584D';
+  
   const smallUserWord = '<sub>user</sub>';
   const smallCompWord = '<sub>comp</sub>';
   result_p.innerHTML = `you = ${convertToWord(userChoice)}   &   computer = ${convertToWord(compChoice)}. You lose!! 😔`;
@@ -69,6 +71,7 @@ function lose(userChoice, compChoice) {
 function draw(userChoice) {
   user_score_span.innerHTML = user_score;
   comp_score_span.innerHTML = comp_score;
+  result_p.style.color = '#ffd700';
   result_p.innerHTML = "It's a draw!😬";
 }
 
@@ -85,6 +88,7 @@ function resetGame() {
   comp_score = 0;
   user_score_span.innerHTML = user_score;
   comp_score_span.innerHTML = comp_score;
+  result_p.style.color = '#ffffff';
   result_p.innerHTML = "Let's start again ! 🥳";
 }
 
