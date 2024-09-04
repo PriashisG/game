@@ -1,4 +1,4 @@
-// declearing default score
+// declaring default score
 let user_score = 0;
 let comp_score = 0;
 
